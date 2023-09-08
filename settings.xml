@@ -30,7 +30,7 @@ under the License.
     <server>
       <id>nexusdeploymentrepo</id>
       <username>admin</username>  <!-- Provide Your Nexus Repository Server Username and Password -->
-      <password>Gabby2010!</password>
+      <password>admin</password>
     </server>
 
   </servers>
@@ -58,9 +58,9 @@ under the License.
      <id>snapshot</id>
      <repositories>
        <repository>
-         <id>http://13.40.161.217:8081/repository/maven-snapshots/</id>
+         <id>nexus-snapshot-repo</id>
          <name>your custom repo</name>
-         <url>http://18.133.188.176:8081/repository/maven-snapshots/</url>
+         <url>http://18.117.81.50:8081/repository/maven-snapshots/</url>
        </repository>
 	   
      </repositories>
@@ -71,7 +71,7 @@ under the License.
        <repository>
          <id>nexus-release-repo</id>
          <name>your custom repo</name>
-         <url>http://18.133.188.176:8081/repository/maven-releases/</url>
+         <url>http://18.117.81.50:8081/repository/maven-release/</url>
        </repository>
      </repositories>
    </profile>
@@ -83,7 +83,7 @@ under the License.
         <activeByDefault>true</activeByDefault>
       </activation>
       <properties>
-        <sonar.host.url>http://35.177.1.148:9000</sonar.host.url>
+        <sonar.host.url>http://3.145.133.93/:9000</sonar.host.url>
       </properties>
     </profile>
     <!--End SonarQube/Sonar Profile-->
